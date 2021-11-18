@@ -13,6 +13,6 @@ const Test: React.FC = (props) => {
 
         fetchData();
     }, []);
-    return <nav>Hi</nav>;
+    return <nav className="test">Hi</nav>;
 };
 export default Test;
