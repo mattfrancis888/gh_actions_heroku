@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-
+import Test from "../src/component/Test";
 const Home: NextPage = () => {
     return (
         <div className={styles.container}>
@@ -22,6 +22,7 @@ const Home: NextPage = () => {
                         Next.js! It is very very cool!
                     </a>
                 </h1>
+                <Test />
 
                 <p className={styles.description}>
                     Get started by editing{" "}
