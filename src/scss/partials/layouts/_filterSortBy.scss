@@ -1,0 +1,23 @@
+.filterSortBy {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #3a3a68;
+
+    color: black;
+    border-radius: 0.8rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    // text-align: left;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    @media screen and (min-width: $md_breakpoint) {
+        margin-bottom: 0;
+    }
+    width: 15rem;
+}
+
+.filterArrow {
+    display: inline-block;
+    vertical-align: middle;
+}

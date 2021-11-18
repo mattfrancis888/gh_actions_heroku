@@ -1,0 +1,10 @@
+.forumContianer {
+    padding: 1rem 2rem;
+    @media screen and (min-width: $md_breakpoint) {
+        padding: 1rem 3rem;
+    }
+}
+
+.forumPostWrap {
+    margin-top: 2rem;
+}

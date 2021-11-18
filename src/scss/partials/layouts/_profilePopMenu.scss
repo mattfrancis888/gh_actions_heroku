@@ -1,0 +1,30 @@
+.profilePopMenuContainerWrap {
+    position: absolute;
+    z-index: 999;
+    top: 100%;
+    left: -150%;
+}
+.profilePopMenuContainer {
+    min-width: 15rem;
+
+    background-color: white;
+    border: 1px solid #dbe0df;
+    z-index: 1;
+
+    ul {
+        padding: 0;
+        list-style: none;
+        text-align: left;
+
+        li {
+            cursor: pointer;
+            margin: 0;
+            padding: 1rem;
+            font-size: 1.5rem;
+            font-weight: 400;
+            &:hover {
+                background-color: $light-grey;
+            }
+        }
+    }
+}

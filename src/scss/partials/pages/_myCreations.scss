@@ -1,0 +1,136 @@
+.myCreationsContainer {
+    padding: 1rem 2rem;
+    @media screen and (min-width: $lg_breakpoint) {
+        padding: 1rem 5rem;
+    }
+}
+
+.myCreationsCreationImage {
+    background: $light-grey;
+    border-radius: 50%;
+    @media screen and (min-width: $sm_breakpoint) {
+        width: 15rem;
+        height: 15rem;
+    }
+    width: 8rem;
+    height: 8rem;
+    border-radius: 1rem;
+}
+.myCreationsStartupImage {
+    border-radius: 50%;
+}
+
+.myCreationsCreationWrap {
+    display: flex;
+    padding: 1rem;
+
+    &:hover {
+        background-color: $light-grey;
+        cursor: pointer;
+    }
+}
+
+.myCreationsCreationTitle {
+    line-height: 1.3;
+    @media screen and (min-width: $md_breakpoint) {
+        font-size: 3.4rem;
+    }
+    @media screen and (min-width: $sm_breakpoint) {
+        font-size: 2.4rem;
+    }
+    font-size: 1.5rem;
+    font-family: "Apercu Bold";
+}
+
+.myCreationsCreationSubTitle {
+    @media screen and (min-width: $md_breakpoint) {
+        font-size: 2rem;
+    }
+    @media screen and (min-width: $sm_breakpoint) {
+        font-size: 1.7rem;
+    }
+    font-size: 1.4rem;
+}
+
+.myCreationsCreationName {
+    margin: 0;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    @media screen and (min-width: $md_breakpoint) {
+        font-size: 2rem;
+    }
+    @media screen and (min-width: $sm_breakpoint) {
+        font-size: 1.7rem;
+    }
+    font-size: 1.4rem;
+}
+.myCreationsEditAndViewIconContainer {
+    display: flex;
+    flex-direction: column;
+}
+.myCreationsEditAndViewIconWrap {
+    display: inline-flex;
+    align-items: center;
+    h3 {
+        margin: 0;
+    }
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    &:hover {
+        color: grey;
+    }
+}
+
+.myCreationCreationDesc {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.myCreationPencilIcon {
+    cursor: pointer;
+    margin: 0;
+    margin-right: 0.2rem;
+
+    font-size: 1.4rem;
+    @media screen and (min-width: $sm_breakpoint) {
+        font-size: 1.8rem;
+    }
+    &:hover {
+        color: grey;
+    }
+}
+.myCreationDesc {
+    line-height: 1.3;
+    @media screen and (min-width: $md_breakpoint) {
+        font-size: 3.4rem;
+    }
+    @media screen and (min-width: $sm_breakpoint) {
+        font-size: 2.4rem;
+    }
+    font-size: 1.5rem;
+    font-family: "Apercu Bold";
+}
+
+.backgroundExternalWrap {
+    display: flex;
+    margin-top: 1rem;
+
+    align-items: center;
+    &:hover {
+        color: grey;
+    }
+    h3 {
+        margin: 0;
+    }
+}
+
+.backgroundExternalIcon {
+    cursor: pointer;
+    margin: 0;
+    margin-right: 0.2rem;
+
+    font-size: 1.4rem;
+    @media screen and (min-width: $sm_breakpoint) {
+        font-size: 1.8rem;
+    }
+}

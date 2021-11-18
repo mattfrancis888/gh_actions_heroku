@@ -1,0 +1,196 @@
+.searchbarForm {
+    background: $light-green;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0.25rem;
+    // border: 1px solid rgba(0, 0, 0, 0.3);
+    // box-shadow: 1px 1px 0px rgb(255 255 255 / 20%);
+    outline: none !important;
+    box-shadow: none !important;
+    border: none;
+    color: white;
+    padding: 2rem;
+    position: relative;
+}
+
+.headerSearchbarIcon,
+.searchbarIcons {
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin-right: 0.3rem;
+    @media screen and (min-width: $md_breakpoint) {
+        font-size: 2.7rem;
+        margin-right: 0.8rem;
+    }
+}
+
+.headerSearchbarIcon {
+    color: black;
+}
+.searchbarIcons {
+    color: white;
+    transition: all 0.1s ease;
+    &:hover {
+        transition: all 0.1s ease;
+
+        transform: scale(1.2);
+    }
+}
+.searchbarInput {
+    font-size: 1.5rem;
+    background: transparent;
+    color: white;
+
+    &:focus {
+        box-shadow: none;
+    }
+    border: none;
+    outline: none;
+    margin: none;
+    width: 100%;
+
+    @media screen and (min-width: $md_breakpoint) {
+        font-size: 1.8rem;
+    }
+    &::placeholder {
+        color: white;
+    }
+}
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.matchContainer {
+    opacity: 1;
+
+    @media screen and (min-width: $sm_breakpoint) {
+        width: 34rem;
+    }
+    @media screen and (min-width: $md_breakpoint) {
+        width: 50rem;
+    }
+    width: 28rem;
+    position: absolute;
+    bottom: -100%;
+    left: 0.2rem;
+    z-index: 3;
+    transition: opacity 0.2s ease-in;
+    box-shadow: 0 0 12px #000000;
+}
+.matchRow {
+    padding: 0.5rem;
+    display: flex;
+    cursor: pointer;
+
+    background: white;
+    &:hover {
+        background: $light-grey;
+    }
+}
+
+.hideMatchContainer {
+    // transition: opacity 0.5s ease-in;
+    display: none;
+}
+
+.matchTextWrap {
+    margin-left: 1rem;
+    color: black;
+
+    overflow: hidden;
+    .matchTitle {
+        margin: 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .matchPrice {
+        margin: 0;
+        margin-top: 0.25rem;
+        @media screen and (min-width: $md_breakpoint) {
+            margin-top: 0.5rem;
+        }
+    }
+}
+
+.searchbarFilterWrap {
+    display: flex;
+
+    h3 {
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 0;
+        padding-bottom: 1rem;
+        margin: 0;
+        margin-right: 2rem;
+
+        font-weight: normal;
+        @media screen and (min-width: $md_breakpoint) {
+            font-size: 1.8rem;
+        }
+        &:hover {
+            font-weight: 700;
+        }
+    }
+}
+
+.searchbarWrap {
+    margin: 3rem 3rem;
+}
+.searchbarFilterSelected {
+    font-weight: 700 !important;
+    border-bottom: 0.5rem solid red;
+}
+
+.locationSearchbarWrap {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    @media screen and (min-width: $sm_breakpoint) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (min-width: $lg_breakpoint) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    grid-row-gap: 0.5rem;
+    grid-column-gap: 0.5rem;
+    margin-top: 1rem;
+    input {
+        font-size: 1.1rem;
+        @media screen and (min-width: $md_breakpoint) {
+            font-size: 1.5rem;
+        }
+    }
+    .react-dropdown-select-clear {
+        font-size: 2rem;
+    }
+}
+.locationSearchbarForm {
+    // $light-green: #74e6d8;
+    background-color: #74e6d8;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0.25rem;
+    // border: 1px solid rgba(0, 0, 0, 0.3);
+    // box-shadow: 1px 1px 0px rgb(255 255 255 / 20%);
+    outline: none !important;
+    box-shadow: none !important;
+    border: none;
+    color: white;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+    & > .searchbarInput {
+        font-size: 1.2rem;
+        @media screen and (min-width: $md_breakpoint) {
+            font-size: 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.viewProfileContainer {
+    @include viewContainerSpacing;
+    min-height: 100vh;
+}
+.viewProfileBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.viewProfileTabSection {
+    width: 100%;
+}
+.viewProfileContentGrid {
+    display: grid;
+
+    grid-gap: 1.5rem;
+
+    grid-template-columns: repeat(1, 1fr);
+    @media screen and (min-width: $sm_breakpoint) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (min-width: $lg_breakpoint) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    // @media screen and (min-width: $lg_breakpoint) {
+    //     width: 10%;
+    //     height: 40rem;
+    // }
+}
+
+.viewProfileForumActivity {
+    font-family: "Apercu Bold";
+    font-size: 1.5rem;
+    cursor: pointer;
+}

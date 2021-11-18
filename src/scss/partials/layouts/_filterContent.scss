@@ -1,0 +1,123 @@
+.filterContentContainer {
+    display: flex;
+
+    @media screen and (min-width: $lg_breakpoint) {
+        max-height: 50rem;
+    }
+}
+.filterContentGlanceWrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    overflow-y: scroll;
+    @include customScrollbar;
+
+    @media screen and (min-width: $md_breakpoint) {
+        width: 50%;
+    }
+}
+.filterContentGlance {
+    display: flex;
+    cursor: pointer;
+    padding: 1rem;
+    &:hover {
+        background: $light-grey;
+    }
+}
+.filterContentGlanceSelected {
+    background: $light-grey;
+}
+.filterContentInfo {
+    padding: 1rem;
+    display: none;
+    overflow-y: scroll;
+    @media screen and (min-width: $md_breakpoint) {
+        display: block;
+        width: 50%;
+    }
+    @include customScrollbar;
+}
+
+.filterContentInfoLogoAndName {
+    display: flex;
+    margin-bottom: 3rem;
+    h1 {
+        &:hover {
+            transition: all 0.3s ease-in-out;
+            color: $green;
+        }
+    }
+}
+.filterContentGlanceLogo {
+    background: $light-grey;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.filterContentGlanceTextMain {
+    font-size: 1.3rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-family: "Apercu Bold";
+    @media screen and (min-width: $md_breakpoint) {
+        font-size: 1.6rem;
+    }
+}
+.filterContentGlanceTextLocation {
+    margin: 0;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    @media screen and (min-width: $md_breakpoint) {
+        font-size: 1.6rem;
+    }
+}
+.filterContentGlanceTextRemoteOption {
+    background-color: $light-red;
+    color: white;
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 0;
+    font-size: 1rem;
+    @media screen and (min-width: $md_breakpoint) {
+        font-size: 1.3rem;
+    }
+}
+
+.heartsAndApplyButtonWrap {
+    display: flex;
+}
+.hearts {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    cursor: pointer;
+    @media screen and (min-width: $md_breakpoint) {
+        font-size: 1.6rem;
+    }
+    svg {
+        cursor: pointer;
+        margin-right: 0.25rem;
+    }
+}
+
+.applyNow {
+    @include greenButton;
+    color: white;
+    border-radius: 0.8rem;
+    padding: 1.25rem;
+    margin-right: 1rem;
+}
+
+.companyInfoSubTitle {
+    font-size: 1.8rem;
+    font-family: "Apercu Bold";
+}
+.companyInfoParagraph {
+    line-height: 1.4;
+    font-size: 1.5rem;
+}

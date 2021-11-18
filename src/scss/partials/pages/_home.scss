@@ -1,0 +1,51 @@
+.homeTitleTextWrap {
+    width: 100%;
+    padding: 1rem 2rem;
+    @media screen and (min-width: $lg_breakpoint) {
+        padding: 1rem 5rem;
+        width: 60%;
+    }
+    min-height: 51rem;
+}
+
+.homeTitle {
+    line-height: 1.3;
+    @media screen and (min-width: $md_breakpoint) {
+        font-size: 3.4rem;
+    }
+    @media screen and (min-width: $sm_breakpoint) {
+        font-size: 2.4rem;
+    }
+    font-size: 1.5rem;
+    font-family: "Apercu Bold";
+}
+
+.homeSubTitlesContainer {
+    display: flex;
+}
+.homeSubTitleWrap {
+    margin-right: 1rem;
+    .homeSubTitle {
+        @media screen and (min-width: $md_breakpoint) {
+            font-size: 2rem;
+        }
+        @media screen and (min-width: $sm_breakpoint) {
+            font-size: 1.7rem;
+        }
+        font-size: 1.4rem;
+    }
+    p {
+        font-size: 1.3rem;
+        line-height: 1.3;
+
+        @media screen and (min-width: $md_breakpoint) {
+            font-size: 1.6rem;
+            line-height: 1.5;
+        }
+    }
+}
+
+.hidePopMenu {
+    // transition: opacity 0.5s ease-in;
+    display: none;
+}

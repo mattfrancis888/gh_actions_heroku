@@ -1,0 +1,63 @@
+.filtersSection {
+    padding: 1rem 2rem;
+    @media screen and (min-width: $lg_breakpoint) {
+        padding: 1rem 4rem;
+    }
+}
+.filterContainer {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (min-width: $md_breakpoint) {
+        display: flex;
+    }
+}
+
+.filterTabsContainer {
+    display: flex;
+    align-items: center;
+}
+
+.filterTab {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-weight: 500;
+    @include tabHover;
+}
+.filterTabSelected {
+    background: $light-grey;
+    border-radius: 0.8rem;
+    font-weight: bold;
+    font-family: "Apercu Bold";
+}
+
+.showingText {
+    font-family: "Apercu Bold";
+}
+.showingOptionsWrap {
+    display: flex;
+    align-items: center;
+}
+.showingOption {
+    border-radius: 0.8rem;
+    padding: 1rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 1rem;
+    @include tabHover;
+}
+.showingOptionSelected {
+    background: $light-grey;
+    font-weight: bold;
+    font-family: "Apercu Bold";
+    // color: rgba(255, 255, 255, 0.85);
+    // background: #ea4c89;
+}
+
+.seeMoreListing {
+    @include greenButton;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}

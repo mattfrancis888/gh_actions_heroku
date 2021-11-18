@@ -1,0 +1,69 @@
+.viewProfileAndCreationAboutGlanceImage {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background: $light-grey;
+}
+
+.viewProfileAndCreationAboutGlanceName {
+    font-size: 2.3rem;
+    margin: 1rem 0;
+    margin-top: 2rem;
+    font-family: "Apercu Bold";
+}
+
+.viewProfileAndCreationAboutGlanceText {
+    @include viewAboutText;
+    max-width: 50%;
+    -webkit-line-clamp: initial; //removes line clamp
+    line-height: 1.5;
+    font-size: 1.8rem !important;
+}
+
+.viewProfileAndCreationAboutGlanceVisitWebsite {
+    display: inline-flex;
+    color: $light-red;
+    align-items: center;
+    margin-top: 1rem;
+    h3 {
+        margin: 0;
+
+        font-size: 1.8rem;
+    }
+    .githubAndExternalIcon {
+        margin-left: 1rem;
+        font-size: 1.8rem;
+    }
+    &:hover {
+        color: grey;
+    }
+}
+
+.viewProfileAndCreationTabTextWrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media screen and (min-width: $sm_breakpoint) {
+        justify-content: start;
+    }
+    h3 {
+        padding: 1rem;
+        font-weight: normal;
+        font-size: 1.4rem;
+        @media screen and (min-width: $sm_breakpoint) {
+            font-size: 1.8rem;
+            // justify-content: start;
+        }
+        @include tabHover;
+    }
+    margin-bottom: 2rem;
+    border-bottom: 1px solid $light-grey-border;
+}
+
+.creationSubSection {
+    display: flex;
+    flex-direction: column;
+    a {
+        display: inline-flex;
+    }
+}

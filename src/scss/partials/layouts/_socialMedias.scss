@@ -1,0 +1,14 @@
+.socialMediasContainer {
+    font-size: 3rem;
+    display: flex;
+    svg {
+        border-radius: 50%;
+        margin-right: 0.1rem;
+        cursor: pointer;
+        // transition: all 0.5s ease;
+        &:hover {
+            // transition: all 0.5s ease;
+            color: grey;
+        }
+    }
+}

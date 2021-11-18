@@ -1,0 +1,138 @@
+.backgroundAndUpdateImageAndOverviewWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    @media screen and (min-width: $md_breakpoint) {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+.updateContainer {
+    cursor: default !important;
+}
+
+.backgroundAndUpdateImageContainer {
+    @include experienceAndProjectImageContainer;
+    border-radius: 1rem;
+    width: 32rem;
+    height: 32rem;
+    @media screen and (min-width: $md_breakpoint) {
+        width: 50rem;
+        height: 40rem;
+        // max-width: 50rem;
+        // height: 50rem;
+    }
+}
+.companyImageContainer {
+    @include experienceAndProjectImageContainer;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    // @media screen and (min-width: $md_breakpoint) {
+    //     width: 30rem;
+    //     height: 30rem;
+
+    // }
+}
+
+.backgroundContainer {
+    position: relative;
+    color: black;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    &:hover {
+        background-color: $light-grey;
+        cursor: pointer;
+    }
+}
+
+.showGitHubAndExternalWrap {
+    display: flex;
+    align-items: center;
+    // color: white;
+    margin-top: 1rem;
+    h2 {
+        font-weight: 900;
+        font-size: 1.3rem;
+        margin-right: 1rem;
+    }
+    .githubAndExternalIcon {
+        font-weight: 400;
+        cursor: pointer;
+        font-size: 2.2rem;
+        margin-right: 2rem;
+        @media screen and (min-width: $md_breakpoint) {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+.backgroundAndUpdateOverviewWrap {
+    position: relative;
+    // background: $light-red;
+    // color: white;
+    width: 100vw;
+    padding: 3rem;
+    @media screen and (min-width: $sm_breakpoint) {
+        padding: 4rem;
+    }
+    @media screen and (min-width: $md_breakpoint) {
+        padding: 0;
+        // top: 15rem;
+        width: 40vw;
+        margin-left: 2.5rem;
+    }
+
+    .projectTitle {
+        // font-family: "Gramatika Bold", "sans-serif";
+        font-family: "Apercu Bold";
+        font-size: 2.2rem;
+        text-align: center;
+        font-weight: 900;
+        margin: 0;
+        margin-bottom: 0.5rem;
+
+        @media screen and (min-width: $md_breakpoint) {
+            text-align: left;
+            font-size: 2rem;
+        }
+        @media screen and (min-width: $sm_breakpoint) {
+            font-size: 1.7rem;
+        }
+        font-size: 1.4rem;
+    }
+    .projectStack {
+        // font-family: "Gramatika Bold", "sans-serif";
+        text-align: left;
+        font-weight: bold;
+        font-size: 1.6rem;
+        font-weight: normal;
+        margin: 0;
+        line-height: 1.3;
+
+        // @media screen and (min-width: $sm_breakpoint) {
+        //     font-size: 1.6rem;
+        // }
+        // @media screen and (min-width: $md_breakpoint) {
+        //     font-size: 1.6rem;
+        // }
+
+        @media screen and (min-width: $xl_breakpoint) {
+            font-size: 2rem;
+        }
+    }
+
+    .showBackgroundAndUpdateDesc {
+        font-size: 1.3rem;
+        line-height: 1.3;
+
+        @media screen and (min-width: $md_breakpoint) {
+            font-size: 1.6rem;
+            line-height: 1.5;
+        }
+    }
+}

@@ -1,0 +1,89 @@
+.formImageUploadWrap {
+    display: block;
+    @media screen and (min-width: $xl_breakpoint) {
+        display: flex;
+    }
+}
+
+.formImageUploadWrapSmallImagePreview {
+    display: flex;
+}
+.avatarImagePreview {
+    background: $light-grey;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+    object-fit: cover;
+}
+
+.contentImagePreview {
+    background: $light-grey;
+    width: 26rem;
+    height: 26rem;
+    border-radius: 1rem;
+    object-fit: cover;
+
+    @media screen and (min-width: $sm_breakpoint) {
+        width: 40rem;
+        height: 40rem;
+    }
+    margin-bottom: 2rem;
+}
+
+.removeImagePreview {
+    @include redButton;
+    background-color: $light-red;
+    padding: 0.5rem;
+    margin-bottom: auto;
+    width: 9rem;
+    margin-top: 2rem;
+    @media screen and (min-width: $xl_breakpoint) {
+        display: inline-block;
+    }
+    text-align: center;
+}
+.formImageUploadInputWrap {
+    display: block;
+
+    margin-bottom: 2rem;
+    @media screen and (min-width: $xl_breakpoint) {
+        margin-left: 1rem;
+        // display: flex;
+        // flex-direction: column;
+    }
+    // @media screen and (min-width: $sm_breakpoint) {
+    //     display: flex;
+    //     flex-direction: column;
+    // }
+    input {
+        width: 17rem;
+        height: 5rem;
+        @media screen and (min-width: $sm_breakpoint) {
+            width: 25rem;
+        }
+    }
+
+    margin-left: 0rem;
+}
+.projectImagePreview {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    margin-right: 1rem;
+    border-radius: 0.25rem;
+}
+
+.imageUploadButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include greenButton;
+    padding: 0.5rem;
+    margin-bottom: auto;
+    margin-right: 1rem;
+}
+
+.hideInput {
+    display: none;
+}
