@@ -9,21 +9,22 @@ jobs:
     build:
         runs-on: ubuntu-latest
         steps:
+            - name: Checkout source Git branch
+              uses: actions/checkout@v2
+              with:
+                ref: main
+                fetch-depth: 10
+                submodules: true
+            - name: Compile CSS from SCSS files
+              uses: gha-utilities/sass-build@v0.4.7
+              with:
+                source: src/scss/main.scsss
+                destination: src/scss/main.css
+                
             - uses: actions/checkout@v2
             - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
               with:
                   heroku_api_key: ${{secrets.HEROKU_API_KEY}}
                   heroku_app_name: "gh-actions-heroku" #Must be unique in Heroku
                   heroku_email: "mattfrancis888@gmail.com"
-            - name: Checkout source Git branch
-              uses: actions/checkout@v2
-              with:
-                ref: src-pages
-                fetch-depth: 10
-                submodules: true
-            - name: Compile CSS from SCSS files
-              uses: gha-utilities/sass-build@v0.4.7
-              with:
-                source: _scss/main.scss
-                destination: /tmp/repo-name/assets/css/main.css
  
