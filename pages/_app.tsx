@@ -1,11 +1,7 @@
-// import "../../client/styles/globals.css";
 import "../styles/globals.css";
 
-import sass from "sass";
+import "../src/scss/main.scss";
 
-// var result = sass.renderSync({
-//     file: "main.scss",
-// });
 import type { AppProps } from "next/app";
 
 function MyApp({ Component, pageProps }: AppProps) {
